@@ -11,3 +11,4 @@ function findnumb(value) {
   console.log(numbers);
 }
 findnumb(input);
+//----

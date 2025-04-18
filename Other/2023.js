@@ -5,3 +5,5 @@ const fs = require("fs");
 const input = fs.readFileSync("Other/input.txt").toString().split(/\r\n/);
 console.log(input);
 function finddecimal(N) {}
+
+//----- No one got it right
