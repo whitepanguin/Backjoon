@@ -7,27 +7,19 @@ let input = require("fs").readFileSync("/dev/stdin").toString().split(/\r\n/);
 for (let i = 0; i < input.length; i++) {
   let total = 0;
   input[i] = input[i].split(" ");
-  total = Number(input[i][0]) + Number(input[i][1]);
+  total = parseInt(input[i][0]) + parseInt(input[i][1]);
 
-  if (total == 0) {
-    break;
-  } else {
-    console.log(total);
-  }
+  console.log(total);
 }
-// ??? 제출이 틀렸다고 한다,,?
+//------
 var fs = require("fs");
 // var input = fs.readFileSync("/dev/stdin").toString().split("\n");
 
-for (let i = 0; i < input.length; i++) {
+for (let i = 0; i < input.length - 1; i++) {
   let A = parseInt(input[i].split(" ")[0]);
   let B = parseInt(input[i].split(" ")[1]);
   let result = A + B;
 
-  if (result === 0) {
-    break;
-  } else {
-    console.log(result);
-  }
+  console.log(result);
 }
-// 반대로 이건 맞는다고 한다.. 흠
+// ????? 뭐지 질문 게시판에서 node.js의 경우 이상하게 input.length -1을 해줘야 맞았다고 판단한다고 한다...
