@@ -12,6 +12,23 @@ let N = input[0];
 let arr = input[1];
 let aim = input[2];
 
-input[1] = input[1].split(" ");
+arr = input[1].split(" ");
 // console.log(input[1]);
-console.log(input[1].filter((e) => input[2] == e).length);
+console.log(arr.filter((e) => aim == e).length);
+// 런타임 에러
+const fs = require("fs");
+const file = process.platform === "linux" ? "dev/stdin" : "./text.txt";
+// const input = fs.readFileSync(file).toString().trim().split("\n");
+
+const t = input[0];
+const arry = input[1].split(" ");
+const v = input[2];
+
+let result = 0;
+for (i = 0; i < t; i++) {
+  if (arry[i] === v) {
+    result++;
+  }
+}
+console.log(result);
+// 이건 왜 통과 했을까, 나랑 뭐가 다른건가
