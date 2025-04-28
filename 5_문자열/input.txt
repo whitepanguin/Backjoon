@@ -1,3 +1,1 @@
-2
-3 ABC
-5 /HTP
+The last character is a blank 
