@@ -1,3 +1,1 @@
-Hello
-Baekjoon
-Online Judge
+2 1 2 1 2 1
