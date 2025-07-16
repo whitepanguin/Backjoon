@@ -64,3 +64,31 @@ if (fircor[0] - seccor[0] > 0) {
     }
   }
 }
+
+// 가장 간결
+
+// 0 = /dev/stdin (Linux · Baekjoon 채점), 로컬 테스트는 파일 경로 지정
+// const [x1, y1, x2, y2, x3, y3] =
+//   require("fs").readFileSync(process.platform === "linux" ? 0 : "10_기하1/input.txt", "utf8")
+//                .trim().split(/\s+/).map(Number);
+
+// console.log(`${x1 ^ x2 ^ x3} ${y1 ^ y2 ^ y3}`);
+
+//-----------------
+
+// 가장 빠른 연산
+
+// const fs = require("fs");
+// const file = process.platform === "linux" ? 0 : "10_기하1/input.txt";
+
+// const pts = fs.readFileSync(file, "utf8")
+//               .trim().split(/\r?\n/)
+//               .map(line => line.split(" ").map(Number)); // [[x1,y1],[x2,y2],[x3,y3]]
+
+// const xs = pts.map(p => p[0]);
+// const ys = pts.map(p => p[1]);
+
+// const missingX = xs[0] === xs[1] ? xs[2] : xs[0] === xs[2] ? xs[1] : xs[0];
+// const missingY = ys[0] === ys[1] ? ys[2] : ys[0] === ys[2] ? ys[1] : ys[0];
+
+// console.log(`${missingX} ${missingY}`);
