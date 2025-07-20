@@ -28,7 +28,8 @@ switch (totnum) {
     }
     break;
   case 3:
-    console.log(0);
+    [arrnum[0][0] - arrnum];
+
     break;
   case 4:
     console.log(0);
