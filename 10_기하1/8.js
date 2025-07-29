@@ -14,5 +14,3 @@ if (a + b > c) {
 } else {
   console.log((a + b) * 2 - 1);
 }
-
-console.log("2");
