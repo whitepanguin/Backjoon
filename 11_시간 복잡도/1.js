@@ -4,4 +4,5 @@ const file =
 
 const input = fs.readFileSync(file).toString().trim().split("\n");
 
-console.log(input);
+console.log("1");
+console.log("O(1)");
